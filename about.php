@@ -37,6 +37,7 @@ if(session_id() == '' || !isset($_SESSION)){session_start();}
           <?php
     
           if(isset($_SESSION['username'])){
+            echo $_SESSION;
             echo '<li><a href="account.php">My Account</a></li>';
             echo '<li><a href="logout.php">Log Out</a></li>';
           }
